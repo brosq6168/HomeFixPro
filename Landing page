@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFixPro – DIY With Confidence</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #2c7873;
+        }
+        
+        .logo span {
+            color: #ff7e5f;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #2c7873, #52de97);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .tagline {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .features h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 32px;
+            color: #2c7873;
+        }
+        
+        .feature-list {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        
+        .feature-item {
+            flex: 1;
+            padding: 30px;
+            margin: 0 15px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .feature-item h3 {
+            margin: 20px 0;
+            color: #2c7873;
+        }
+        
+        .feature-icon {
+            font-size: 40px;
+            color: #ff7e5f;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .testimonials h2 {
+            margin-bottom: 50px;
+            font-size: 32px;
+            color: #2c7873;
+        }
+        
+        .testimonial-list {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .testimonial-item {
+            flex: 0 0 45%;
+            margin: 0 20px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #2c7873;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 80px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #52de97, #2c7873);
+            color: white;
+        }
+        
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        
+        .cta p {
+            font-size: 18px;
+            margin-bottom: 40px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* Form Styles */
+        .waitlist-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        input[type="email"] {
+            width: 70%;
+            padding: 15px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        /* Button Styles */
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #ff7e5f;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #ff6a4a;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .footer-tagline {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .copyright {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Home<span>FixPro</span></div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>🏡 HomeFixPro – DIY With Confidence</h1>
+            <p class="tagline">🔨 Expert Guidance | Practical Solutions | Stress-Free Home Repairs</p>
+            <p>Empowering homeowners with step-by-step guidance, sustainable repair tips, and expert advice—so you can fix it right the first time.</p>
+            <a href="#waitlist" class="btn">Get Early Access</a>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>🔹 Tired of DIY Disasters? We've Got You Covered!</h2>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Easy-to-Follow Tutorials</h3>
+                    <p>Master repairs like a pro with our detailed step-by-step guides.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Tool & Material Guides</h3>
+                    <p>Know exactly what you need for every project.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✅</div>
+                    <h3>Expert Q&A & Community</h3>
+                    <p>Get answers to your DIY questions from pros and fellow DIYers.</p>
+                </div>
+            </div>
+            <div class="feature-list">
+                <div class="feature-item" style="margin: 0 auto; max-width: 300px;">
+                    <div class="feature-icon">✅</div>
+                    <h3>Sustainable Fixes</h3>
+                    <p>Eco-friendly home improvement tips that save money and the planet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>💬 What DIYers Are Saying:</h2>
+            <div class="testimonial-list">
+                <div class="testimonial-item">
+                    <p class="testimonial-text">🛠️ "Finally, a home improvement platform that actually makes repairs easy!"</p>
+                    <p class="testimonial-author">– John Smith</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial-text">🌱 "Love the eco-friendly approach! No more wasteful fixes."</p>
+                    <p class="testimonial-author">– Sarah Johnson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="cta" id="waitlist">
+        <div class="container">
+            <h2>🚀 Be the First to Try HomeFixPro!</h2>
+            <p>Sign up now for exclusive early access, expert insights, and launch-day perks!</p>
+            <div class="waitlist-form">
+                <form>
+                    <div class="form-group">
+                        <input type="email" placeholder="Enter your email address" required>
+                        <button type="submit" class="btn">Get Early Access</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-tagline">🔧 Fix It Right. Fix It Smart. Fix It With HomeFixPro.</p>
+            <a href="#waitlist" class="btn">JOIN THE WAITLIST</a>
+            <p class="copyright">&copy; 2023 HomeFixPro. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
