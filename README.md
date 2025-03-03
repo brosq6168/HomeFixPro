@@ -9,7 +9,7 @@ A responsive, SEO-optimized landing page for HomeFixPro - a platform empowering 
 
 HomeFixPro is a comprehensive DIY home improvement platform designed to help homeowners tackle repairs with confidence. This repository contains the landing page code for the HomeFixPro website, optimized for search engines and user engagement.
 
-![HomeFixPro Preview](https://via.placeholder.com/800x400?text=HomeFixPro+Landing+Page)
+![HomeFixPro Preview](https://v0-home-fix-pro.vercel.app/)
 
 ## ✨ Features
 
